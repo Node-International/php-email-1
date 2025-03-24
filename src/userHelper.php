@@ -1,10 +1,12 @@
 <?php
 
-function getEmailById($users, $id)
+// BEGIN (write your solution here)
+
+function getEmailById(array $users,int $id): ?string
 {
     foreach ($users as $user) {
         if ($user['id'] == $id) {
-            return $user['name'];
+            return $user['email'];
         }
     }
     return null;
